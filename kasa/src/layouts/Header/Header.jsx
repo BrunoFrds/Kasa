@@ -1,20 +1,13 @@
 import React from "react";
 import "./Header.css";
 import logoHeader from "../../assets/images/LogoHeader.png";
-import { NavLink } from "react-router-dom";
+import Navigation from "../../components/Navigation/Navigation";
 
 function Header() {
   return (
     <header>
       <img src={logoHeader} alt="Logo" />
-      <nav>
-        <NavLink to="/accueil" className="lien-site lien-menu">
-          Accueil
-        </NavLink>
-        <NavLink to="/a-propos" className="lien-site lien-menu">
-          À propos
-        </NavLink>
-      </nav>
+      <Navigation />
     </header>
   );
 }
