@@ -1,9 +1,12 @@
 import React from "react";
+import "./Card.css";
 
-const Card = () => {
+const Card = ({ id, title, cover }) => {
   return (
-    <div>
-      <h1>Fiche logement</h1>
+    <div id={id} className="card">
+      <img src={cover} alt="Card logement" className="card-img" />
+      <div className="card-dark"></div>
+      <p className="card-title">{title}</p>
     </div>
   );
 };

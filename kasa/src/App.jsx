@@ -10,13 +10,6 @@ import Home from "./pages/Home/Home";
 
 const App = () => {
   return (
-    // BrowserRouter va englober toute l'application
-    // Routes va englober toutes les routes
-    // Route va représenter chaque routes
-    // path="/" : chemin correspondant à l'accueil du site
-    // path="/apropos" : chemin vers le chemin correspondant
-    // path="*" : chemin si l'url ne correspond à aucun chemin déclaré
-    // element={<Home />} : on va chercher le composant voulu
     <BrowserRouter>
       <Header />
       <Routes>

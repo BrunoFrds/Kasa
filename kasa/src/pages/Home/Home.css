@@ -1,0 +1,14 @@
+.home {
+  width: 88%;
+  margin: auto;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  margin: auto;
+  padding: 26px 20px 26px 20px;
+}
