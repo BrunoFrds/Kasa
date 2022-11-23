@@ -2,8 +2,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 85%;
   height: 70px;
-  margin: 40px 8% 30px 8%;
+  margin: 40px auto 30px auto;
 }
 
 header img {

@@ -1,0 +1,26 @@
+.banniere-home {
+  position: relative;
+  border-radius: 25px;
+  width: 85%;
+  height: 223px;
+  margin: auto;
+}
+
+.banniere-img {
+  border-radius: 25px;
+  height: 100%;
+  object-fit: fill;
+  width: 100%;
+  filter: brightness(70%);
+}
+
+.banniere-texte {
+  color: #ffffff;
+  font-size: 45px;
+  text-align: center;
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 15%;
+  bottom: 69.04%;
+}
