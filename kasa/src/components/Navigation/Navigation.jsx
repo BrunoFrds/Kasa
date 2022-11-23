@@ -7,10 +7,10 @@ const Navigation = () => {
     // NavLink permet de faire des liens vers les chemins définis
     <div>
       <nav>
-        <NavLink to="/" className="lien-site lien-menu">
+        <NavLink to="/" className="lien">
           Accueil
         </NavLink>
-        <NavLink to="/apropos" className="lien-site lien-menu">
+        <NavLink to="/apropos" className="lien">
           À propos
         </NavLink>
       </nav>

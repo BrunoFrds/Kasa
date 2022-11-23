@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin: 40px 8% 30px 8%;
+}
+
+img {
+  height: 70px;
+}
