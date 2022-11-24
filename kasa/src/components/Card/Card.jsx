@@ -1,13 +1,16 @@
 import React from "react";
 import "./Card.css";
+import { NavLink } from "react-router-dom";
 
 const Card = ({ id, title, cover }) => {
   return (
-    <div id={id} className="card">
-      <img src={cover} alt="Card logement" className="card-img" />
-      <div className="card-dark"></div>
-      <p className="card-title">{title}</p>
-    </div>
+    <NavLink key={id} to={"/fiche/" + id}>
+      <div id={id} className="card">
+        <img src={cover} alt="Card logement" className="card-img" />
+        <div className="card-dark"></div>
+        <p className="card-title">{title}</p>
+      </div>
+    </NavLink>
   );
 };
 
