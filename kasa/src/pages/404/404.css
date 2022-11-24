@@ -1,0 +1,26 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: #ff6060;
+  font-size: 288px;
+  line-height: 411px;
+  margin: 175px auto 33px auto;
+}
+
+.alert {
+  color: #ff6060;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 33px auto 91px auto;
+}
+
+.redirection {
+  color: #ff6060;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 91px auto 159px auto;
+  text-decoration: underline;
+}
