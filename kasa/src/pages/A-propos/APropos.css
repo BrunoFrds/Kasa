@@ -7,3 +7,22 @@
   width: 83%;
   margin: auto;
 }
+
+@media screen and (max-width: 400px) {
+  .apropos {
+    width: 92%;
+  }
+
+  .banniere-apropos {
+    height: 223px;
+    margin: 0px auto 20px auto;
+    background-image: url(../../assets/images/BanniereMiniAPropos.png);
+    border-radius: 10px;
+    filter: brightness(70%);
+    background-size: cover;
+  }
+
+  .banniere-apropos img {
+    opacity: 0;
+  }
+}

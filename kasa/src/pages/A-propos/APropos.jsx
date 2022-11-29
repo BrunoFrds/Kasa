@@ -7,7 +7,9 @@ import Collapse from "../../components/Collapse/Collapse";
 const APropos = () => {
   return (
     <div className="apropos">
-      <Banniere image={banniereAPropos} />
+      <div className="banniere-apropos">
+        <Banniere className="banniere-apropos" image={banniereAPropos} />
+      </div>
       <div className="collapse-apropos">
         <Collapse
           title="Fiabilité"

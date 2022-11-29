@@ -23,3 +23,21 @@
   top: 15%;
   bottom: 69.04%;
 }
+
+@media screen and (max-width: 400px) {
+  .banniere-home {
+    border-radius: 10px;
+    height: 111px;
+    margin: 20px auto 20px auto;
+  }
+
+  .banniere-texte {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: start;
+    width: 70%;
+    position: absolute;
+    top: 10px;
+    left: 16px;
+  }
+}

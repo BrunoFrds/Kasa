@@ -10,3 +10,12 @@ header {
 header img {
   height: 70px;
 }
+
+@media screen and (max-width: 400px) {
+  header {
+    width: 92%;
+  }
+  header img {
+    height: 65%;
+  }
+}

@@ -36,3 +36,21 @@
 .carrousel-img.actif {
   display: block;
 }
+
+@media screen and (max-width: 400px) {
+  .carrousel {
+    height: 255px;
+    margin: 20px auto 15px auto;
+  }
+
+  .arrow {
+    width: 12px;
+  }
+
+  .left-arrow {
+    margin-left: 5px;
+  }
+  .right-arrow {
+    margin-right: 5px;
+  }
+}

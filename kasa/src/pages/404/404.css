@@ -24,3 +24,25 @@
   margin: 91px auto 159px auto;
   text-decoration: underline;
 }
+
+@media screen and (max-width: 400px) {
+  .error {
+    font-size: 96px;
+    line-height: 137px;
+    margin: 150px auto 6px auto;
+  }
+
+  .alert {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 5px auto 76px auto;
+    text-align: center;
+    width: 80%;
+  }
+
+  .redirection {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 76px auto 159px auto;
+  }
+}

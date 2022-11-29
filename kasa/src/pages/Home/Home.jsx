@@ -8,7 +8,9 @@ import ListeLogement from "../../assets/api/logements.json";
 const Home = () => {
   return (
     <div className="home">
-      <Banniere image={banniereHome} texte="Chez vous, partout et ailleurs" />
+      <div className="banniere-accueil">
+        <Banniere image={banniereHome} texte="Chez vous, partout et ailleurs" />
+      </div>
       <div className="card-list">
         {ListeLogement.map((logement) => (
           <Card
