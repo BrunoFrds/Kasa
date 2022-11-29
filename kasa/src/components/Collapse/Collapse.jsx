@@ -13,14 +13,11 @@ const Collapse = ({ title, description }) => {
           <img src={flecheVert} alt="Ouvrir cette liste" />
         </p>
       </div>
-      {
-        /* Si le dropdown est à TRUE alors il affichera la description */
-        open && (
-          <div className="collapse-description">
-            <p className="description">{description}</p>
-          </div>
-        )
-      }
+      {open && (
+        <div className="collapse-description">
+          <p className="description">{description}</p>
+        </div>
+      )}
     </div>
   );
 };

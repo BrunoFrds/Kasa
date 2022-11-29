@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Fiche.css";
 import { Navigate, useParams } from "react-router-dom";
 import ListeLogements from "../../assets/api/logements.json";
@@ -9,20 +9,7 @@ import etoile from "../../assets/images/Etoile.png";
 import etoileVide from "../../assets/images/EtoileVide.png";
 
 const Fiche = () => {
-  /*const [location, setLocation] = useState({
-    host: { name: "", picture: "" },
-    rating: "",
-    equipments: [],
-    tags: [],
-    pictures: [],
-  });*/
-
   const id = useParams();
-
-  /*const logement = ListeLogements.map((logement) => {
-    return logement.id === id.id;
-  });
-  console.log(logement);*/
 
   const ficheLogement = ListeLogements.find(
     (logement) => logement.id === id.id
@@ -33,18 +20,18 @@ const Fiche = () => {
   });
 
   let noteLogement = [];
-  let etoileComplete = true;
+  let etoilePleine = true;
   for (let index = 0; index < 5; index++) {
-    if (index === parseInt(ficheLogement.rating)) {
-      etoileComplete = false;
+    if (index === parseInt(ficheLogement?.rating)) {
+      etoilePleine = false;
     }
-    if (etoileComplete === true) {
+    if (etoilePleine === true) {
       noteLogement.push(
         <img
           key={index}
           className="etoile"
           src={etoile}
-          alt={`${ficheLogement.rating}/5`}
+          alt={`${ficheLogement?.rating}/5`}
         />
       );
     } else {
@@ -53,13 +40,13 @@ const Fiche = () => {
           key={index}
           className="etoile"
           src={etoileVide}
-          alt={`${ficheLogement.rating}/5`}
+          alt={`${ficheLogement?.rating}/5`}
         />
       );
     }
   }
 
-  const equipmentsLogement = ficheLogement.equipments.map(
+  const equipmentsLogement = ficheLogement?.equipments.map(
     (equipment, index) => {
       return <li key={index}>{equipment}</li>;
     }
@@ -69,26 +56,26 @@ const Fiche = () => {
     <>
       {ficheLogement ? (
         <div className="fiche">
-          <Carrousel images={ficheLogement.pictures} />
+          <Carrousel images={ficheLogement?.pictures} />
           <div className="info-logement">
             <div className="title-fiche">
-              <h1 className="title-logement">{ficheLogement.title}</h1>
-              <h2 className="location-logement">{ficheLogement.location}</h2>
+              <h1 className="title-logement">{ficheLogement?.title}</h1>
+              <h2 className="location-logement">{ficheLogement?.location}</h2>
             </div>
             <div className="tags-logement">{tagsLogement}</div>
             <div className="host-logement">
-              <h2 className="name-host-logement">{ficheLogement.host.name}</h2>
+              <h2 className="name-host-logement">{ficheLogement?.host.name}</h2>
               <img
                 className="img-host-logement"
-                src={ficheLogement.host.picture}
-                alt="Locataire"
+                src={ficheLogement?.host.picture}
+                alt="Propriétaire"
               />
             </div>
             <div className="note-logement">{noteLogement}</div>
             <div className="collapse-fiche">
               <Collapse
                 title="Description"
-                description={ficheLogement.description}
+                description={ficheLogement?.description}
               />
               <Collapse title="Equipements" description={equipmentsLogement} />
             </div>

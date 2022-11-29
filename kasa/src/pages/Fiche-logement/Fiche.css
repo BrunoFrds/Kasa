@@ -62,6 +62,7 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
+  list-style: none;
 }
 
 .collapse-fiche .collapse {
