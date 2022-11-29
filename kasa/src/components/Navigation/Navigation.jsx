@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    // NavLink permet de faire des liens vers les chemins définis
     <div>
       <nav>
         <NavLink to="/" className="lien">

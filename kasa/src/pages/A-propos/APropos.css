@@ -25,4 +25,8 @@
   .banniere-apropos img {
     opacity: 0;
   }
+
+  .collapse-apropos {
+    width: 100%;
+  }
 }
