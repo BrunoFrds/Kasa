@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Carrousel.css";
 import flecheHor from "../../assets/images/FlecheHor.png";
 
-function Carrousel({ images }) {
+const Carrousel = ({ images }) => {
   let [imgDisplay, setImgDisplay] = useState(0);
   let imgNumber = images.length;
 
@@ -53,6 +53,6 @@ function Carrousel({ images }) {
       )}
     </div>
   );
-}
+};
 
 export default Carrousel;
